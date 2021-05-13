@@ -62,6 +62,7 @@ const listener = app.listen(process.env.PORT || 3000, () => {
     console.log('Your app is listening on port ' + listener.address().port)
 })
 
+console.log("no issue here")
 
 class Block {
     constructor(index, timestamp, data, prevHash) {
@@ -84,6 +85,7 @@ const createBlockchain = (data, chain) => {
     console.log("Chain: ", chain)
     chain.reverse();
     const blockchain = chain;
+
 
     let previousBlock = blockchain[chain.length - 1];
     console.log("previousBlock: ", previousBlock)
