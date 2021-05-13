@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise Tracker | Free Code Camp</title>
+    <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tiny Blockchain</h1>
+        <!-- <form action="/api/blockchain/new-block" method="post">
+            <h3>Add Template block:</h3>
+            <p><code>POST /api/blockchain/new-temp-block</code></p>
+            <input id="uname" type="text" name="username" placeholder="username">
+
+            <input type="submit" value="Submit">
+        </form> -->
+
+
+        <form action="/api/blockchain/new-block" method="post">
+            <h3>Add new block:</h3>
+            <p><code>POST /api/blockchain/new-block</code></p>
+            <input id="data" type="text" name="blockData" placeholder="data*">
+            <input id="amount" type="text" name="blockAmount" placeholder="amount*">
+            <input type="submit" value="Submit">
+        </form>
+
+
+        <p><strong>GET blockchain log: </strong><code>GET /api/blockchain/log?{userId}[&amp;from][&amp;to][&amp;limit]</code></p>
+        <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
+        <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+    </div>
+</body>
+
+</html>
